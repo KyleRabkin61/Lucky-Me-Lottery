@@ -1,9 +1,69 @@
+/* buttons */
+
+.generate {
+    background: black;
+    width: 200px;
+    height: 100px;
+}
+.reset {
+    background: black;
+    width: 200px;
+    height: 100px;
+}
+
+/* divs */
+
 .header {
     height: 150px;
-    background:black;
+    background: black;
 }
-.btn {
-    background:black;
-    width:150px;
-    height:100px;
+
+.names-display {
+    background: white;
+    border:10px solid black;
+    height:400px;
 }
+.generated-name-display {
+    background: white;
+    border:10px solid black;
+    height:400px;
+}
+
+/* footer */
+
+footer {
+    background: black;
+    height:140px;
+}
+.footer-text {
+    font-size:15px;
+    color:white;
+}
+
+/* scrollbar */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+
+  ::-webkit-scrollbar-thumb {
+    background:black;
+    transition:0.5s;
+  }
+  
+  /* Handle on hover */
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    transition:0.5s;
+  }
