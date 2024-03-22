@@ -53,16 +53,23 @@
 
             <div class="col-md-6 col-12 my-4">
                 <div class="header d-flex align-items-center justify-content-center text-center p-3" id="inputBox">
-                    <input type="text" class="form-control" placeholder="Enter Name...">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter Name...">
                 </div>
             </div>
 
-<!-- generate button -->
+<!-- add button -->
 
             <div class="col-md-6 col-12 my-4 d-flex align-items-center justify-content-center text-center">
-                <button class="btn btn-dark generate">
-                    <h3 class="text-white">Generate</h3>
+                <button class="btn btn-dark generate" id="addNameBtn">
+                    <h3 class="text-white">Add</h3>
             </div>
+        </div>
+<!-- generate button -->
+        <div class="row">
+            <div class="col-12 my-4 d-flex align-items-center justify-content-center text-center" id="randomName">
+                <button class="btn btn-dark generate" id="pickRandomBtn">
+                    <h3 class="text-white">Generate</h3>
+                </div>
         </div>
 
 <!-- name divs -->
@@ -70,12 +77,12 @@
         <div class="row my-4">
             <div class="col-12 col-md-6">
                 <div class="names-display p-3 text-center text-md-start" id="listNameDisplay">
-                    <h1 class="text-black">Names:</h1>
+                    <ul id="nameList" class="list-group"></ul>
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div class="generated-name-display p-3 d-flex align-items-center justify-content-center text-center">
-                    <h1 class="text-black">The winner is:</h1>
+                <div class="generated-name-display p-3 d-flex align-items-center justify-content-center text-center" id="randomName">
+                    <h1 class="text-black"></h1>
                 </div>
             </div>
         </div>
@@ -119,6 +126,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <!-- javascript link -->
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
