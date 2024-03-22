@@ -23,3 +23,27 @@ function addName() {
     // clear the input field after adding the name
     nameInput.value = ''
 }
+
+function displayNames() {
+    const nameList = document.getElementById('nameList')
+
+    // clear out previous list items
+
+    nameList.innerHTML = ''
+
+    for (let i = 0; i < namesArray.length; i++) {
+        const name = namesArray[i]
+
+        const li = document.createElement('li')
+        li.className = 'list-group-item'
+
+        const span = document.createElement('span')
+        span.textContent = name
+
+        li.appendChild(span)
+        nameList.appendChild(li)
+    }
+}
+
+// event listener for the button clicks to add a name
+document.getElementById('addNameBtn').addEventListener('click', addName)
