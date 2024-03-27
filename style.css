@@ -3,16 +3,25 @@
     background: black;
     width: 200px;
     height: 100px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .generate {
     background: black;
     width: 200px;
     height: 100px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.remove {
+.reset {
     background: black;
     width: 200px;
     height: 100px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* divs */
@@ -38,11 +47,14 @@
 .input {
     height: 150px;
     background: black;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .names-display {
     background: white;
     border:10px solid black;
-    height:400px;
+    min-height:400px;
 }
 .generated-name-display {
     background: white;
@@ -57,6 +69,9 @@ footer {
     height:140px;
 }
 .footer-text {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size:15px;
     color:white;
 }

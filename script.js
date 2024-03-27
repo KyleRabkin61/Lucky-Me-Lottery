@@ -1,6 +1,8 @@
 // create an array to store names
 
-const namesArray = []
+let namesArray = []
+
+const randomNameDiv = document.getElementById('randomName')
 
 function addName() {
 
@@ -45,5 +47,33 @@ function displayNames() {
     }
 }
 
+function pickRandomName() {
+    randomNameDiv.textContent = ''
+
+    // selects a random name from the names array
+
+    const randomNumber = Math.floor(Math.random() * namesArray.length)
+    const randomName = namesArray[randomNumber]
+
+    randomNameDiv.textContent = randomName
+
+    namesArray.splice(randomNumber, 1)
+
+    displayNames()
+}
+
+function resetList() {
+    namesArray = []
+    randomNameDiv.textContent = ''
+    displayNames()
+}
+
 // event listener for the button clicks to add a name
 document.getElementById('addNameBtn').addEventListener('click', addName)
+
+// event listener for the button to select and display and random button
+document.getElementById('pickRandomBtn').addEventListener('click', pickRandomName)
+
+// event listener for the button to select and display and random button
+document.getElementById('resetBtn').addEventListener('click', resetList)
+
