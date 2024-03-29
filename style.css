@@ -1,6 +1,9 @@
+body {
+    background: #50c878;
+}
 /* buttons */
 .add {
-    background: black;
+    background: #ff7900;
     width: 200px;
     height: 100px;
     font-family: "Righteous", sans-serif;
@@ -8,7 +11,7 @@
     font-style: normal;
 }
 .generate {
-    background: black;
+    background: #ff7900;
     width: 200px;
     height: 100px;
     font-family: "Righteous", sans-serif;
@@ -16,7 +19,7 @@
     font-style: normal;
 }
 .reset {
-    background: black;
+    background: #ff7900;
     width: 200px;
     height: 100px;
     font-family: "Righteous", sans-serif;
@@ -28,7 +31,7 @@
 
 .header {
     height: 200px;
-    background: black;
+    background: #009a49;
 }
 .title{
     font-family: "Staatliches", sans-serif;
@@ -46,26 +49,38 @@
 }
 .input {
     height: 150px;
-    background: black;
+    background: #009a49;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+span {
+    color:black;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 .names-display {
     background: white;
-    border:10px solid black;
+    border:10px solid #009a49;
     min-height:400px;
 }
 .generated-name-display {
     background: white;
-    border:10px solid black;
+    border:10px solid #009a49;
     height:400px;
+    font-style: normal;
+}
+.random-name-h1 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* footer */
 
 footer {
-    background: black;
+    background: #009a49;
     height:140px;
 }
 .footer-text {
@@ -87,17 +102,17 @@ footer {
   /* Track */
 
   ::-webkit-scrollbar-track {
-    background: #c4c4c4; 
+    background: #00a865; 
   }
    
   /* Handle */
 
   ::-webkit-scrollbar-thumb {
-    background:black;
+    background:#009a49;
   }
   
   /* Handle on hover */
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #00813c; 
   }
