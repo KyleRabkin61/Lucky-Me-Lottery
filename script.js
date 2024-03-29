@@ -14,6 +14,9 @@ function addName() {
 
     const name = nameInput.value.trim()
 
+    while (name === null || name === '') [
+        name = alert('Please enter valid name.') ]
+
     // add the name to the end of the array
 
     namesArray.push(name)
@@ -76,4 +79,9 @@ document.getElementById('pickRandomBtn').addEventListener('click', pickRandomNam
 
 // event listener for the button to select and display and random button
 document.getElementById('resetBtn').addEventListener('click', resetList)
+
+document.addEventListener('keypress', function(e){
+    if(e.key === "Enter")
+      addName()
+  })
 
