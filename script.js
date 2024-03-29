@@ -14,6 +14,8 @@ function addName() {
 
     const name = nameInput.value.trim()
 
+    // sends a alert to the user if the name inputted was invalid (empty/spaces)
+
     while (name === null || name === '') [
         name = alert('Please enter valid name.')]
 
@@ -66,6 +68,9 @@ function pickRandomName() {
 }
 
 function resetList() {
+
+    // resets all names
+
     namesArray = []
     randomNameDiv.textContent = ''
     displayNames()
